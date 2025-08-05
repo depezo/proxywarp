@@ -1,0 +1,11 @@
+name = "video-proxy"
+main = "cloudflare-worker.js"
+compatibility_date = "2024-01-01"
+
+[env.production]
+workers_dev = true
+
+# Si vous avez un domaine personnalisé, décommentez et configurez :
+# routes = [
+#   { pattern = "proxy.votredomaine.com/*", zone_id = "YOUR_ZONE_ID" }
+# ]
